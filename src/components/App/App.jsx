@@ -5,11 +5,13 @@ import AppRoutes from "../Routes/routes";
 
 const App = () => {
     return (
-        <>
+        <div className="app">
             <Header />
-            <AppRoutes />
+            <main className="main">
+                <AppRoutes />
+            </main>
             <Footer />
-        </>
+        </div>
     );
 };
 

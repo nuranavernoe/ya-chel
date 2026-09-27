@@ -4,4 +4,6 @@ export const ROUTES = {
     CART: "/cart",
     ABOUT: "/about",
     CONTACTS: "/contacts",
+    PARTNERS: "/partners",
+    PROFILE: "/profile",
 };

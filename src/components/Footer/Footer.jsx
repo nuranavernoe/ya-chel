@@ -1,21 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../../styles/Footer.module.css";
+import { ROUTES } from "../../utils/routes";
+
+import logo from "../../images/logo.png";
 
 const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
 
-                <div className={styles.logo}>
-                    COFFEE
-                </div>
+                <Link to={ROUTES.HOME} className={styles.logo}>
+                    <img src={logo} alt="Логотип" />
+                </Link>
 
                 <div className={styles.links}>
-                    <Link to="/">Главная</Link>
-                    <Link to="/menu">Меню</Link>
-                    <Link to="/about">О нас</Link>
-                    <Link to="/contacts">Контакты</Link>
+                    <Link to={ROUTES.ABOUT}>О нас</Link>
+                    <Link to={ROUTES.MENU}>Меню</Link>
+                    <Link to={ROUTES.PARTNERS}>Партнерам</Link>
+                    <Link to={ROUTES.CONTACTS}>Контакты</Link>
                 </div>
 
                 <div className={styles.info}>

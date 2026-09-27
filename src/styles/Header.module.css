@@ -15,6 +15,13 @@
   justify-content: space-between;
 }
 
+/* Левая часть: логотип + меню */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
 /* Логотип */
 .logo {
   display: flex;
@@ -22,7 +29,7 @@
 }
 
 .logo img {
-  height: 66px; /* Подгоните под размер вашего SVG */
+  height: 48px;
   width: auto;
   display: block;
 }
@@ -40,6 +47,7 @@
   font-family: inherit;
   font-size: 15px;
   font-weight: 500;
+  text-transform: lowercase;
   transition: opacity 0.2s ease;
 }
 
@@ -71,9 +79,9 @@
 }
 
 .icon {
-  width: 22px;
   height: 22px;
-  fill: currentColor;
+  width: auto;
+  display: block;
 }
 
 /* Счетчик товаров в корзине */

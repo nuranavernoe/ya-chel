@@ -13,3 +13,14 @@ button,
 input {
     font: inherit;
 }
+
+/* Футер всегда прижат к низу страницы */
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
