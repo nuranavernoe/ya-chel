@@ -1,0 +1,91 @@
+/* Основной контейнер шапки */
+.header {
+  width: 100%;
+  background-color: #F2F0EB; 
+  padding: 18px 0;
+}
+
+/* Ограничивающий контейнер по центру */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Логотип */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 66px; /* Подгоните под размер вашего SVG */
+  width: auto;
+  display: block;
+}
+
+/* Навигационное меню */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px; /* Расстояние между ссылками */
+}
+
+.navLink {
+  text-decoration: none;
+  color: #1A1A1A;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.navLink:hover {
+  opacity: 0.7;
+}
+
+/* Правый блок (город, язык, иконки) */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.locationLang {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A1A1A;
+  user-select: none;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #1A1A1A;
+  position: relative;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+/* Счетчик товаров в корзине */
+.count {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: #3E2618;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 50%;
+  padding: 2px 5px;
+  line-height: 1;
+}

@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F7F1E8;
+    color: #3E2618;
+}
+
+button,
+input {
+    font: inherit;
+}
